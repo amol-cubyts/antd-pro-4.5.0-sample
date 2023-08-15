@@ -242,7 +242,7 @@ export default defineConfig({
                   name: 'blockEditor',
                   icon: 'smile',
                   path: '/result/blockeditor',
-                  component: './BlockEditor/BlockEditor',
+                  component: './blockEditor/BlockEditor',
                 },
               ],
             },

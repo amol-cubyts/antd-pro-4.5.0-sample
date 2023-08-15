@@ -1,13 +1,14 @@
-import React from 'react';
-import BlockEditorMain from './BlockEditorMain'
+import React from "react";
+import { BlockNoteView, useBlockNote } from "@blocknote/react";
 
 export default () => {
+  const editor = useBlockNote({});
   return (
     <div>
-        <h1>Block Editor</h1>
-        <div style={{border: '2px solid red'}}>
-            <BlockEditorMain />
-        </div>
+      <h1>Block Editor</h1>
+      <div style={{ border: "2px solid red" }}>
+        <BlockNoteView editor={editor} />
+      </div>
     </div>
   );
 };
